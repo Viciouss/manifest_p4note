@@ -2,7 +2,7 @@
 
 ### Init:
 
-    repo init -u git://github.com/Viciouss/manifest_aosp_p4note.git -b aosp-9.0
+    repo init -u git://github.com/Viciouss/manifest_p4note.git -b aosp-9.0
     
 ### Status:
 
