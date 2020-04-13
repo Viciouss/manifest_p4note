@@ -11,7 +11,6 @@
   <remove-project groups="qcom,pdk-qcom" name="LineageOS/android_hardware_qcom_vr" />
   <remove-project groups="qcom_wlan,pdk-qcom" name="LineageOS/android_hardware_qcom_wlan" />
 
-  <project name="LineageOS/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" revision="cm-14.1"/>
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-16.0"/>
 
   <project name="Viciouss/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" revision="lineage-16.0"/>
