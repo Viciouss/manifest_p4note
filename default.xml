@@ -21,8 +21,8 @@
   <project remote="private" name="Viciouss/android-iio-sensors-hal" path="external/iio-sensors-hal" revision="staging" />
   <project remote="private" name="GloDroid/glodroid_forks" path="external/minigbm" revision="refs/tags/minigbm-v0.8.1" />
   <project remote="private" name="GloDroid/glodroid_forks" path="external/mesa3d" revision="836ddcef8111ca2f9d6cddf9ea265a5fab0d91d9" groups="pdk-cw-fs,pdk-fs" />
-  <project remote="private" name="GloDroid/glodroid_forks" path="external/drm_hwcomposer" revision="refs/tags/drm_hwcomposer-v0.8.2" groups="drm_hwcomposer,pdk-fs" />
-  <!--project remote="freedesktop" name="drm-hwcomposer/drm-hwcomposer" path="external/drm_hwcomposer" revision="refs/tags/drm_hwcomposer-v0.7.6" groups="drm_hwcomposer,pdk-fs" /-->
+  <!--project remote="private" name="GloDroid/glodroid_forks" path="external/drm_hwcomposer" revision="refs/tags/drm_hwcomposer-v0.8.2" groups="drm_hwcomposer,pdk-fs" /-->
+  <project remote="freedesktop" name="drm-hwcomposer/drm-hwcomposer" path="external/drm_hwcomposer" revision="f2c060f8be1ed1270728b43a2588d3b9eb00c292" groups="drm_hwcomposer,pdk-fs" />
 
   <project remote="private" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android12-5.10.120-lts-p4note" />
 
