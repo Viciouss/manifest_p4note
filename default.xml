@@ -19,6 +19,7 @@
   <project remote="private" name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" />
   <project remote="private" name="Viciouss/external_tinyhal" path="external/tinyhal" revision="master" />
   <project remote="private" name="Viciouss/android-iio-sensors-hal" path="external/iio-sensors-hal" revision="staging" />
+  <project remote="private" name="Viciouss/android_system_bt" path="system/bt" groups="pdk" />
   <project remote="private" name="GloDroid/glodroid_forks" path="external/minigbm" revision="refs/tags/minigbm-v0.7.2" />
   <project remote="private" name="GloDroid/glodroid_forks" path="external/mesa3d" revision="refs/tags/mesa3d-v0.7.6" groups="pdk-cw-fs,pdk-fs" />
   <project remote="private" name="GloDroid/glodroid_forks" path="external/drm_hwcomposer" revision="refs/tags/drm_hwcomposer-v0.7.6" groups="drm_hwcomposer,pdk-fs" />
