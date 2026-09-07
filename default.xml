@@ -24,7 +24,7 @@
   <project remote="private" name="GloDroid/glodroid_forks" path="external/drm_hwcomposer" revision="refs/tags/drm_hwcomposer-v0.7.6" groups="drm_hwcomposer,pdk-fs" />
   <!--project remote="freedesktop" name="drm-hwcomposer/drm-hwcomposer" path="external/drm_hwcomposer" revision="refs/tags/drm_hwcomposer-v0.7.6" groups="drm_hwcomposer,pdk-fs" /-->
 
-  <project remote="private" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android12-5.10-2022-04-p4note" />
+  <project remote="private" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android12-5.10.120-lts-p4note" />
 
   <project remote="aosp" name="platform/external/tinycompress" path="external/tinycompress" groups="pdk" />
 
