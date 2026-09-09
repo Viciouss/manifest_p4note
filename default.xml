@@ -8,22 +8,19 @@
 
   <!-- remove repos that are being replaced -->
   <remove-project name="platform/external/mesa3d" />
-  <remove-project name="platform/external/drm_hwcomposer" />
   <remove-project name="platform/external/minigbm" />
-  <remove-project name="platform/external/libdrm" />
   <!-- LOS tinycompress only works with kernel sources, skip for now -->
   <remove-project name="LineageOS/android_external_tinycompress" />
 
   <!-- added repos -->
-  <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" remote="aosp" revision="e460836a34ce9f55bf3ea49646308bc5cb2a79f7" />
-  <project remote="private" name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" />
+  <project remote="private" name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" revision="lineage-21.0" />
+  
   <project remote="private" name="Viciouss/external_tinyhal" path="external/tinyhal" revision="master" />
   <project remote="private" name="Viciouss/android-iio-sensors-hal" path="external/iio-sensors-hal" revision="staging" />
-  <project remote="private" name="GloDroid/glodroid_forks" path="external/minigbm" revision="refs/tags/minigbm-v0.8.1" />
-  <project remote="private" name="GloDroid/glodroid_forks" path="external/mesa3d" revision="836ddcef8111ca2f9d6cddf9ea265a5fab0d91d9" groups="pdk-cw-fs,pdk-fs" />
-  <!--project remote="private" name="GloDroid/glodroid_forks" path="external/drm_hwcomposer" revision="refs/tags/drm_hwcomposer-v0.8.2" groups="drm_hwcomposer,pdk-fs" /-->
-  <project remote="freedesktop" name="drm-hwcomposer/drm-hwcomposer" path="external/drm_hwcomposer" revision="f2c060f8be1ed1270728b43a2588d3b9eb00c292" groups="drm_hwcomposer,pdk-fs" />
-
+  
+  <project remote="private" name="Viciouss/external_mesa3d" path="external/mesa3d" revision="lineage-21.0" groups="pdk-cw-fs,pdk-fs" />
+  <project remote="private" name="Viciouss/external_minigbm" path="external/minigbm" revision="lineage-21.0" />
+  
   <project remote="private" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android12-5.10.120-lts-p4note" />
 
   <project remote="aosp" name="platform/external/tinycompress" path="external/tinycompress" groups="pdk" />
