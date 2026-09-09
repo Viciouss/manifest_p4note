@@ -9,6 +9,7 @@
   <!-- remove repos that are being replaced -->
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/minigbm" />
+  <remove-project name="platform/external/drm_hwcomposer" />
   <!-- LOS tinycompress only works with kernel sources, skip for now -->
   <remove-project name="LineageOS/android_external_tinycompress" />
 
@@ -20,6 +21,7 @@
   
   <project remote="private" name="Viciouss/external_mesa3d" path="external/mesa3d" revision="lineage-21.0" groups="pdk-cw-fs,pdk-fs" />
   <project remote="private" name="Viciouss/external_minigbm" path="external/minigbm" revision="lineage-21.0" />
+  <project remote="private" name="Viciouss/external_drm_hwcomposer" path="external/drm_hwcomposer" revision="lineage-21.0" groups="drm_hwcomposer,pdk-fs"  />
   
   <project remote="private" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android12-5.10.120-lts-p4note" />
 
