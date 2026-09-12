@@ -21,11 +21,13 @@
   
   <project remote="private" name="Viciouss/external_mesa3d" path="external/mesa3d" revision="lineage-21.0" groups="pdk-cw-fs,pdk-fs" />
   <project remote="private" name="Viciouss/external_minigbm" path="external/minigbm" revision="lineage-21.0" />
-  <project remote="private" name="Viciouss/external_drm_hwcomposer" path="external/drm_hwcomposer" revision="lineage-21.0" groups="drm_hwcomposer,pdk-fs"  />
-  
+  <project remote="private" name="Viciouss/external_drm_hwcomposer" path="external/drm_hwcomposer" revision="lineage-21.0-a17" groups="drm_hwcomposer,pdk-fs"  />
+
   <project remote="private" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android12-5.10.120-lts-p4note" />
 
   <project remote="aosp" name="platform/external/tinycompress" path="external/tinycompress" groups="pdk" />
+
+
 
   <!-- for building the kernel -->
   <project remote="private" name="GloDroid/linaro_gcc_prebuilts.git"
