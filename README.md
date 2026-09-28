@@ -19,7 +19,7 @@ ccache -M 50G
 # preparing the build env
 . build/envsetup.sh
 # pick whatever device you have
-lunch lineage_n8000-ap2a-userdebug
+lunch lineage_n8000-bp1a-userdebug
 # this builds the project (use -jX with a lower number of cores if you are facing OOM, I build
 # it with -j8 on a 32GB machine and it sometimes still crashes, just start it again)
 m
