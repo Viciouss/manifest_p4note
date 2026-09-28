@@ -7,21 +7,21 @@
   <include name="los.xml" />
 
   <!-- remove repos that are being replaced -->
-  <remove-project name="platform/external/mesa3d" />
+  <!--remove-project name="platform/external/mesa3d" /-->
   <remove-project name="platform/external/minigbm" />
   <remove-project name="platform/external/drm_hwcomposer" />
   <!-- LOS tinycompress only works with kernel sources, skip for now -->
   <remove-project name="LineageOS/android_external_tinycompress" />
 
   <!-- added repos -->
-  <project remote="private" name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" revision="lineage-21.0" />
+  <project remote="private" name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" revision="lineage-22.2" />
   
   <project remote="private" name="Viciouss/external_tinyhal" path="external/tinyhal" revision="master" />
   <project remote="private" name="Viciouss/android-iio-sensors-hal" path="external/iio-sensors-hal" revision="staging" />
   
-  <project remote="private" name="Viciouss/external_mesa3d" path="external/mesa3d" revision="lineage-21.0" groups="pdk-cw-fs,pdk-fs" />
-  <project remote="private" name="Viciouss/external_minigbm" path="external/minigbm" revision="lineage-21.0" />
-  <project remote="private" name="Viciouss/external_drm_hwcomposer" path="external/drm_hwcomposer" revision="lineage-21.0-a17" groups="drm_hwcomposer,pdk-fs"  />
+  <!--project remote="private" name="Viciouss/external_mesa3d" path="external/mesa3d" revision="lineage-22.0" groups="pdk-cw-fs,pdk-fs" /-->
+  <project remote="private" name="Viciouss/external_minigbm" path="external/minigbm" revision="lineage-22.2" />
+  <project remote="private" name="Viciouss/external_drm_hwcomposer" path="external/drm_hwcomposer" revision="lineage-22.2-a17" groups="drm_hwcomposer,pdk-fs"  />
   <project remote="aosp" path="external/libdisplay-info" name="platform/external/libdisplay-info" groups="pdk" revision="android17-release" />
 
   <project remote="private" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android14-6.1-p4note" />

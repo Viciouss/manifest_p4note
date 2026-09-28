@@ -2,7 +2,7 @@
 
 ### Init:
 
-    repo init -u git://github.com/Viciouss/manifest_p4note.git -b lineage-21.0
+    repo init -u git://github.com/Viciouss/manifest_p4note.git -b lineage-22.2
     
 ### Status:
 
