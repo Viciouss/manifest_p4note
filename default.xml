@@ -24,7 +24,7 @@
   <project remote="private" name="Viciouss/external_drm_hwcomposer" path="external/drm_hwcomposer" revision="lineage-22.2-a17" groups="drm_hwcomposer,pdk-fs"  />
   <project remote="private" name="Viciouss/android_packages_modules_Connectivity" path="packages/modules/Connectivity" revision="lineage-22.2" groups="pdk-cw-fs,pdk-fs" />
 
-  <project remote="private" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android14-6.1-p4note" />
+  <project remote="private" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android15-6.6-p4note" />
 
   <project remote="aosp" path="external/libdisplay-info" name="platform/external/libdisplay-info" groups="pdk" revision="android17-release" />
   <project remote="aosp" name="platform/external/tinycompress" path="external/tinycompress" groups="pdk" />
