@@ -7,6 +7,7 @@
   <include name="los.xml" />
 
   <!-- remove repos that are being replaced -->
+  <remove-project name="platform/external/v4l2_codec2" />
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/minigbm" />
   <remove-project name="platform/external/drm_hwcomposer" />
@@ -23,6 +24,7 @@
   <project remote="private" name="Viciouss/external_minigbm" path="external/minigbm" revision="lineage-22.2" />
   <project remote="private" name="Viciouss/external_drm_hwcomposer" path="external/drm_hwcomposer" revision="lineage-22.2-a17" groups="drm_hwcomposer,pdk-fs"  />
   <project remote="private" name="Viciouss/android_packages_modules_Connectivity" path="packages/modules/Connectivity" revision="lineage-22.2" groups="pdk-cw-fs,pdk-fs" />
+  <project remote="private" name="Viciouss/external_v4l2_codec2" path="external/v4l2_codec2" revision="lineage-22.2" groups="pdk" />
 
   <project remote="private" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android15-6.6-p4note" />
 
