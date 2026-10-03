@@ -4,39 +4,27 @@
             fetch="https://github.com/TeamWin"
             review="https://gerrit.twrp.me" />
 
-    <remote name="LineageOS"
-            fetch="https://github.com/LineageOS"
-            review="https://review.lineageos.org" />
+<!-- TWRP lives in TeamWin android-9.0 (not AOSP!) -->
+    <remove-project name="platform/bootable/recovery"/>
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="TeamWin" revision="android-9.0"/>
 
-    <remote name="private"
-           fetch="ssh://git@github.com" />
+<!-- Use TeamWin fork for repacker support -->
+  <remove-project name="android_build" />
+  <project path="build/make" name="android_build" remote="TeamWin" revision="android-9.0" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
 
-<!-- TWRP lives in TeamWin repo, not OmniROM -->
-    <remove-project name="android_bootable_recovery" />
-    <project path="bootable/recovery" name="android_bootable_recovery" remote="TeamWin" revision="android-9.0" />
+<!-- Include external Magisk repo for repack binaries -->
+    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="android-9.0" />
 
-    <!-- Use build repo from TeamWin -->
-    <remove-project name="android_build" />
-    <project path="build" name="android_build" remote="TeamWin" revision="android-7.1" groups="pdk,tradefed" >
-        <copyfile src="core/root.mk" dest="Makefile" />
-    </project>
+    <project path="external/python3" name="android_external_python3" remote="TeamWin" revision="android-9.0"/>
 
-    <!-- Include Magisk repo for resetprop support -->
-    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="android-7.1" />
-
-<!-- Include external unzip repo from CyanogenMod for toolbox/toybox support -->
-    <project path="external/unzip" name="android_external_unzip" remote="TeamWin" revision="cm-14.1" />
-
-<!-- Include external zip repo for zip support -->
-    <project path="external/zip" name="android_external_zip" remote="TeamWin" revision="android-7.1" />
-
-    <remove-project name="platform/external/libdrm" />
-    <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" revision="bd80203f2a8882e96f4a1a984083ae84a31f885e" />
-
-    <project name="android_external_bash" path="external/bash" remote="LineageOS" revision="cm-14.1" />
-    <project name="android_external_nano" path="external/nano" remote="LineageOS" revision="cm-14.1" />
-    <project name="android_external_libncurses" path="external/libncurses" remote="LineageOS" revision="cm-14.1" />
-
-    <project name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" remote="private" revision="twrp-9_nougat"/>
-
+<!-- Include TeamWin android_system_update_engine to build a good update_engine_sideload -->
+    <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-9.0" />
 </manifest>
