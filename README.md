@@ -1,4 +1,4 @@
-# Android 14.0 LOS manifest for the Samsung p4note device family
+# LineageOS 22.2 (Android 15) manifest for the Samsung p4note device family
 
 ### Init:
 
