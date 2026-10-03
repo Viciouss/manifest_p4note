@@ -717,4 +717,7 @@
   <project remote="github" name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" revision="twrp-9_pie"/>
   <project remote="github" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android12-5.10.120-lts-p4note" />
 
+  <remove-project name="android_bootable_recovery"/>
+  <project path="bootable/recovery" name="Viciouss/android_bootable_recovery" remote="github" revision="twrp-9_pie"/>
+
 </manifest>
