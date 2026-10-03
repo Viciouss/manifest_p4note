@@ -2,7 +2,7 @@
 
 ### Init:
 
-    repo init -u ssh://git@github.com/Viciouss/manifest_p4note.git -b twrp-9_nougat
+    repo init -u ssh://git@github.com/Viciouss/manifest_p4note.git -b twrp-9_pie
 
 ### Build:
 
