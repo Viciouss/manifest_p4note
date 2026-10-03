@@ -1107,4 +1107,7 @@
 
   <!-- FIRST: Add/Replace repos and particular directories needed by TWRP -->
   <include name="twrp-default.xml"/>
+
+  <project remote="github" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android12-5.10.120-lts-p4note" />
+
 </manifest>

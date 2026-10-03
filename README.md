@@ -1,3 +1,21 @@
+## Warning
+
+This is just a test whether twrp 12.1 with the mainline kernel would fit into the 8 MB recovery. It does, but it's completely stripped down with basically everything removed that would be useful. ADB is working though.
+
+## Checkout
+
+    repo init -u ssh://git@github.com/Viciouss/manifest_p4note.git -b twrp-12.1
+
+## Build
+
+    . build/envsetup.sh
+    export ALLOW_MISSING_DEPENDENCIES=true
+    export LC_ALL=C
+    lunch omni_p4note-userdebug
+    mka recoveryimage
+
+## Original README here
+
 ## Submitting Patches ##
 Our project is open source, and patches are always welcome!
 You can send patches by using:
